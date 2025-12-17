@@ -1,27 +1,41 @@
 ﻿using System.Text;
+using System.Threading.Tasks;
 
 class Initializer
 {
-    public static void Main()
+    public static async Task Main()
     {
         Console.InputEncoding = Encoding.UTF8;
         Console.OutputEncoding = Encoding.UTF8;
+
         Console.Title = "🏦 Automated Teller Machine";
 
         try
         {
-            ChooseLanguage();
+            // ChooseLanguage();
 
             while (true)
             {
                 Console.Clear();
                 Menu.MainMenu();
-                Console.ReadKey();
+
+                short inputVal = Utils.GetInput<short>("\n 👉 Please enter the operation you wish to perform numerically: ");
+
+                switch (inputVal)
+                {
+                    case 1: Withdraw.WithdrawMoney(); break;
+                    case 2: Depoist.DepositMoney(); break;
+                    case 3: List.ListNonTermAccount(); break;
+
+                    default: Utils.WriteColored("\n ❓ The operation you want to perform is invalid!"); break;
+                }
+                Utils.WaitingScreen();
+                await Animations.SpinnerAnimation();
             }
         }
         catch (Exception ex)
         {
-            Utils.WriteColored($"\n ⛔ Bir hata oluştu: {ex.Message}", ConsoleColor.Red);
+            Utils.WriteColored($"\n ⛔ An error has occured: {ex.Message}", ConsoleColor.Red);
         }
     }
 
