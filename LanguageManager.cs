@@ -6,12 +6,16 @@
         EN
     }
 
+    private static Language _selectedLanguage = Language.TR;
+
     private static readonly Dictionary<string, string> TR = new()
     {
         { "Withdraw", "Para Çekme" },
         { "Deposit", "Para Yatırma" },
-        { "Balance", "Bakiye Sorgulama" },
-        { "Transfer", "Para Transferi" },
+        { "BalanceInquiry", "Bakiye Sorgulama" },
+        { "MoneyTransfer", "Para Transferi" },
+        { "Payments", "Ödemeler" },
+        { "TransactionHistory", "Hesap Hareketleri" },
         { "Exit", "Çıkış" },
         { "SelectLanguage", "Dil Seçimi" },
         { "EnterChoice", "Seçiminizi giriniz" }
@@ -21,28 +25,23 @@
     {
         { "Withdraw", "Withdraw Money" },
         { "Deposit", "Deposit Money" },
-        { "Balance", "Balance Inquiry" },
-        { "Transfer", "Money Transfer" },
+        { "BalanceInquiry", "Balance Inquiry" },
+        { "MoneyTransfer", "Money Transfer" },
+        { "Payments", "Bill Payment" },
+        { "TransactionHistory", "Transaction History" },
         { "Exit", "Exit" },
         { "SelectLanguage", "Select Language" },
         { "EnterChoice", "Enter your choice" }
     };
 
-    public Language SelectedLanguage { get; private set; }
-
-    public LanguageManager(Language defaultLanguage = Language.TR)
-    {
-        SelectedLanguage = defaultLanguage;
-    }
-
     public void SetLanguage(Language lang)
     {
-        SelectedLanguage = lang;
+        _selectedLanguage = lang;
     }
 
     public string T(string key)
     {
-        return SelectedLanguage switch
+        return _selectedLanguage switch
         {
             Language.TR => TR[key],
             Language.EN => EN[key],

@@ -15,43 +15,47 @@ class Initializer
             while (true)
             {
                 Console.Clear();
-
                 Menu.MainMenu();
-
                 Console.ReadKey();
             }
         }
         catch (Exception ex)
         {
-            Utils.WriteColored($"\n ⛔ An error has occurred: {ex.Message}", ConsoleColor.Red);
+            Utils.WriteColored($"\n ⛔ Bir hata oluştu: {ex.Message}", ConsoleColor.Red);
         }
     }
 
     private static void ChooseLanguage()
     {
+        var langManager = new LanguageManager();
+
         while (true)
         {
             Console.Clear();
 
-            var langManager = new LanguageManager();
+            Console.CursorVisible = false;
+            Utils.WriteColored(" 1. Türkçe");
+            Utils.WriteColored(" 2. English");
 
-            Utils.WriteColored("[T] Türkçe", ConsoleColor.Red);
-            Utils.WriteColored("[E] English", ConsoleColor.Cyan);
+            char choice = Console.ReadKey(true).KeyChar;
 
-            char choice = char.ToUpper(Console.ReadKey(true).KeyChar);
-
-            if (choice == 'T')
+            switch (choice)
             {
-                langManager.SetLanguage(LanguageManager.Language.TR);
-                break;
+                case '1':
+                    langManager.SetLanguage(LanguageManager.Language.TR);
+                    return;
+
+                case '2':
+                    langManager.SetLanguage(LanguageManager.Language.EN);
+                    return;
+
+                default:
+                    Utils.WriteColored("\n ⚠️ Invalid Transaction! Please try again.", ConsoleColor.Yellow);
+                    Thread.Sleep(800);
+                    break;
             }
-            else if (choice == 'E')
-            {
-                langManager.SetLanguage(LanguageManager.Language.EN);
-                break;
-            }
-            else
-                continue;
+            Console.CursorVisible = true;
         }
     }
+
 }
