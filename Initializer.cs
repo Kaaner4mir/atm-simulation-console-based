@@ -1,8 +1,9 @@
 ﻿using System.Text;
-using System.Threading.Tasks;
 
 class Initializer
 {
+    static LanguageManager _lm = new LanguageManager();
+
     public static async Task Main()
     {
         Console.InputEncoding = Encoding.UTF8;
@@ -12,22 +13,22 @@ class Initializer
 
         try
         {
-            // ChooseLanguage();
+            ChooseLanguage();
 
             while (true)
             {
                 Console.Clear();
                 Menu.MainMenu();
 
-                short inputVal = Utils.GetInput<short>("\n 👉 Please enter the operation you wish to perform numerically: ");
+                short inputVal = Utils.GetInput<short>($"{_lm.T("GetInputMain")}");
 
                 switch (inputVal)
                 {
                     case 1: Withdraw.WithdrawMoney(); break;
                     case 2: Depoist.DepositMoney(); break;
-                    case 3: List.ListNonTermAccount(); break;
-
-                    default: Utils.WriteColored("\n ❓ The operation you want to perform is invalid!"); break;
+                    case 3: BalanceInquiry.ListAccounts(); break;
+                    case 4: MoneyTransfer.Transfer(); break;
+                    default: Utils.WriteColored($"{_lm.T("InvalidOperation")}", ConsoleColor.Red); break;
                 }
                 Utils.WaitingScreen();
                 await Animations.SpinnerAnimation();
@@ -35,13 +36,13 @@ class Initializer
         }
         catch (Exception ex)
         {
-            Utils.WriteColored($"\n ⛔ An error has occured: {ex.Message}", ConsoleColor.Red);
+            Utils.WriteColored(string.Format(_lm.T("Catch"), ex.Message), ConsoleColor.Red);
         }
     }
 
-    private static void ChooseLanguage()
+    public static void ChooseLanguage()
     {
-        var langManager = new LanguageManager();
+        var lm = new LanguageManager();
 
         while (true)
         {
@@ -56,11 +57,11 @@ class Initializer
             switch (choice)
             {
                 case '1':
-                    langManager.SetLanguage(LanguageManager.Language.TR);
+                    lm.SetLanguage(LanguageManager.Language.TR);
                     return;
 
                 case '2':
-                    langManager.SetLanguage(LanguageManager.Language.EN);
+                    lm.SetLanguage(LanguageManager.Language.EN);
                     return;
 
                 default:

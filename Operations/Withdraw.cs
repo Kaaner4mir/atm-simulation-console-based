@@ -1,31 +1,33 @@
 ﻿class Withdraw
 {
+
+    static LanguageManager _lm = new LanguageManager();
     public static void WithdrawMoney()
     {
         Console.Clear();
         List.ListNonTermAccount();
 
-        int id = Utils.GetInput<int>("\n 👉 Please enter the ID of the account you wish to withdraw money from: ");
+        int id = Utils.GetInput<int>($"{_lm.T("WishWithdraw")}");
 
         var account = Data._accounts.FirstOrDefault(x => x.AccountId == id);
 
         if (account == null)
         {
-            Utils.WriteColored("\n ❓ Account not found!");
+            Utils.WriteColored($"{_lm.T("AccountNotFound")}",ConsoleColor.Red);
             return;
         }
 
-        decimal withdrawAmount = Utils.GetInput<decimal>("\n ➡️ Enter the amount you want to withdraw from account: ");
+        decimal withdrawAmount = Utils.GetInput<decimal>($"{_lm.T("AmountWithdraw")}");
 
         if (withdrawAmount < 10)
         {
-            Utils.WriteColored("\n ❌ The minimum amount you can withdraw is €10.", ConsoleColor.Red);
+            Utils.WriteColored($"{_lm.T("MinWithdrawAmount")}", ConsoleColor.Red);
             return;
         }
 
         if (withdrawAmount > account.Balance)
         {
-            Utils.WriteColored("\n ❌ Insufficient balance!",ConsoleColor.Red);
+            Utils.WriteColored($"{_lm.T("InsufficientBalance")}", ConsoleColor.Red);
             return;
         }
 
@@ -33,9 +35,17 @@
 
         Console.Clear();
 
-        Utils.WriteColored($" ✅ {account.Currency}{withdrawAmount} has been successfully withdrawn from your account. New balance: {account.Balance}",ConsoleColor.Green);
+        string resultMessage = string.Format(
+            _lm.T("ResultWithdraw"),
+            account.Currency,
+            withdrawAmount,
+            account.Balance
+        );
 
-        Logger.AddLog("Withdraw",withdrawAmount);
+        Utils.WriteColored(resultMessage, ConsoleColor.Green);
+
+        Logger.AddLog("Withdraw", withdrawAmount);
+
 
     }
 }
