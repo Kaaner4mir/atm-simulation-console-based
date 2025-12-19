@@ -28,6 +28,7 @@ class Initializer
                     case 2: Depoist.DepositMoney(); break;
                     case 3: BalanceInquiry.ListAccounts(); break;
                     case 4: MoneyTransfer.Transfer(); break;
+                    case 6: LogHistory.ListLog(); break;
                     default: Utils.WriteColored($"{_lm.T("InvalidOperation")}", ConsoleColor.Red); break;
                 }
                 Utils.WaitingScreen();

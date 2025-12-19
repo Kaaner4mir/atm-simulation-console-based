@@ -12,8 +12,8 @@
             ( $" 2. {_lm.T("Deposit")}", ConsoleColor.Green),
             ( $" 3. {_lm.T("BalanceInquiry")}", ConsoleColor.Blue),
             ( $" 4. {_lm.T("MoneyTransfer")}", ConsoleColor.DarkYellow),
-            ( $" 5. {_lm.T("TransactionHistory")}", ConsoleColor.White),
-            ( $" 6. {_lm.T("Exit")}", ConsoleColor.Magenta),
+            ( $" 6. {_lm.T("TransactionHistory")}", ConsoleColor.White),
+            ( $" 7. {_lm.T("Exit")}", ConsoleColor.Magenta),
         };
 
         foreach (var item in mainMenuItems)

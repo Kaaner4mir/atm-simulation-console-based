@@ -52,6 +52,14 @@
         { "ResultTransfer", " ✅ {0}{1} başarıyla transfer edildi. Yeni bakiye: {0}{2}" },
         { "RecieverId", "\n ➡️ Alıcı hesaba ait hesap numarasını giriniz: " },
 
+
+        // LogHistory
+        {"LogId"," 🔑 Kayıt ID          :"},
+        {"LogTime"," ⌛ Kayıt Zamanı      :"},
+        {"Type"," 🔠 Tür               :"},
+        {"LogTransactionAmount"," 💰 İşlem Tutarı      :"},
+
+
         // Exceptions and Errors
         { "AccountNotFound", "\n ❓ Hesap bulunamadı!" },
         { "Catch", "\n ⛔ Bir hata oluştu: {0}" },
@@ -106,6 +114,13 @@
         { "MinTransferAmount", "\n ❌ The minimum amount you can send is €10." },
         { "ResultTransfer", " ✅ {0}{1} has been successfully transferred. New Balance: {0}{2}" },
         { "RecieverId", "\n ➡️ Please enter the account number associated with the recipient's account: " },
+
+
+        // LogHistory
+        {"LogId"," 🔑 Log ID            :"},
+        {"LogTime"," ⌛ Log Time          :"},
+        {"Type"," 🔠 Type              :"},
+        {"LogTransactionAmount"," 💰 Transaction Amount:"},
 
         // Exceptions and Errors
         { "AccountNotFound", "\n ❓ Account not found!" },
