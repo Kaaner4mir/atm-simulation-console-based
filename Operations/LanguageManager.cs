@@ -122,6 +122,10 @@
         {"Type"," 🔠 Type              :"},
         {"LogTransactionAmount"," 💰 Transaction Amount:"},
 
+
+        //Exit
+        {"ExitOperation"," ➡️ Are you sure you want to exit (Y-N): "},
+
         // Exceptions and Errors
         { "AccountNotFound", "\n ❓ Account not found!" },
         { "Catch", "\n ⛔ An error has occurred: {0}" },

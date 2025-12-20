@@ -28,7 +28,8 @@ class Initializer
                     case 2: Depoist.DepositMoney(); break;
                     case 3: BalanceInquiry.ListAccounts(); break;
                     case 4: MoneyTransfer.Transfer(); break;
-                    case 6: LogHistory.ListLog(); break;
+                    case 5: LogHistory.ListLog(); break;
+                    case 6: Exit.ExitOperations(); break;
                     default: Utils.WriteColored($"{_lm.T("InvalidOperation")}", ConsoleColor.Red); break;
                 }
                 Utils.WaitingScreen();
@@ -43,8 +44,6 @@ class Initializer
 
     public static void ChooseLanguage()
     {
-        var lm = new LanguageManager();
-
         while (true)
         {
             Console.Clear();
@@ -58,11 +57,11 @@ class Initializer
             switch (choice)
             {
                 case '1':
-                    lm.SetLanguage(LanguageManager.Language.TR);
+                    _lm.SetLanguage(LanguageManager.Language.TR);
                     return;
 
                 case '2':
-                    lm.SetLanguage(LanguageManager.Language.EN);
+                    _lm.SetLanguage(LanguageManager.Language.EN);
                     return;
 
                 default:
