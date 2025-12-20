@@ -26,12 +26,12 @@
         { "Exit", "Çıkış" },
 
         // List
-        { "Id", " 🔑 Hesap ID     :" },
-        { "Name", " 🏷️ Hesap Adı    :" },
-        { "Branch", " 🏦 Şube         :" },
-        { "OpeningDate", " 📆 Açılış Tarihi:" },
-        { "Currency", " 💱 Para Birimi  :" },
-        { "Balance", " 💰 Bakiye       :" },
+        { "Id", " 🔑 Hesap ID" },
+        { "Name", " 🏷️ Hesap Adı" },
+        { "Branch", " 🏦 Şube" },
+        { "OpeningDate", " 📆 Açılış Tarihi" },
+        { "Currency", " 💱 Para Birimi" },
+        { "Balance", " 💰 Bakiye" },
 
         // Withdraw Menu
         { "WishWithdraw", "\n 👉 Lütfen para çekmek istediğiniz hesabın numarasını giriniz: " },
@@ -59,10 +59,10 @@
 
 
         // LogHistory
-        {"LogId"," 🔑 Kayıt ID          :"},
-        {"LogTime"," ⌛ Kayıt Zamanı      :"},
-        {"Type"," 🔠 Tür               :"},
-        {"LogTransactionAmount"," 💰 İşlem Tutarı      :"},
+        {"LogId"," 🔑 Kayıt ID"},
+        {"LogTime"," ⌛ Kayıt Zamanı"},
+        {"Type"," 🔠 Tür"},
+        {"LogTransactionAmount"," 💰 İşlem Tutarı"},
 
 
         //UserControl
@@ -96,12 +96,12 @@
         { "Exit", "Exit" },
 
         // List
-        { "Id", " 🔑 Account ID   :" },
-        { "Name", " 🏷️ Account Name :" },
-        { "Branch", " 🏦 Branch       :" },
-        { "OpeningDate", " 📆 Opening Date :" },
-        { "Currency", " 💱 Currency     :" },
-        { "Balance", " 💰 Balance      :" },
+        { "Id", " 🔑 Account ID" },
+        { "Name", " 🏷️ Account Name" },
+        { "Branch", " 🏦 Branch" },
+        { "OpeningDate", " 📆 Opening Date" },
+        { "Currency", " 💱 Currency" },
+        { "Balance", " 💰 Balance" },
 
         // Withdraw Menu
         { "WishWithdraw", "\n 👉 Please enter the ID of the account you wish to withdraw money from: " },
@@ -129,10 +129,10 @@
 
 
         // LogHistory
-        {"LogId"," 🔑 Log ID            :"},
-        {"LogTime"," ⌛ Log Time          :"},
-        {"Type"," 🔠 Type              :"},
-        {"LogTransactionAmount"," 💰 Transaction Amount:"},
+        {"LogId"," 🔑 Log ID"},
+        {"LogTime"," ⌛ Log Time"},
+        {"Type"," 🔠 Type"},
+        {"LogTransactionAmount"," 💰 Transaction Amount"},
 
 
         //Exit
@@ -170,12 +170,12 @@
         { "Exit", "Beenden" },
 
         // List
-        { "Id", " 🔑 Kontonummer :" },
-        { "Name", " 🏷️ Kontoname  :" },
-        { "Branch", " 🏦 Filiale      :" },
-        { "OpeningDate", " 📆 Eröffnungsdatum:" },
-        { "Currency", " 💱 Währung     :" },
-        { "Balance", " 💰 Kontostand  :" },
+        { "Id", " 🔑 Kontonummer" },
+        { "Name", " 🏷️ Kontoname" },
+        { "Branch", " 🏦 Filiale" },
+        { "OpeningDate", " 📆 Eröffnungsdatum" },
+        { "Currency", " 💱 Währung" },
+        { "Balance", " 💰 Kontostand" },
 
         // Withdraw Menu
         { "WishWithdraw", "\n 👉 Bitte geben Sie die Kontonummer ein, von der Sie Geld abheben möchten: " },
@@ -202,10 +202,10 @@
         { "RecieverId", "\n ➡️ Bitte geben Sie die Kontonummer des Empfängerkontos ein: " },
 
         // LogHistory
-        {"LogId"," 🔑 Protokoll-ID     :"},
-        {"LogTime"," ⌛ Protokollzeit    :"},
-        {"Type"," 🔠 Typ               :"},
-        {"LogTransactionAmount"," 💰 Transaktionsbetrag:"},
+        {"LogId"," 🔑 Protokoll-ID"},
+        {"LogTime"," ⌛ Protokollzeit"},
+        {"Type"," 🔠 Typ"},
+        {"LogTransactionAmount"," 💰 Transaktionsbetrag"},
 
         //Exit
         {"ExitOperation"," ➡️ Möchten Sie wirklich beenden (J-N): "},
@@ -241,12 +241,12 @@
         { "Exit", "Quitter" },
 
         // List
-        { "Id", " 🔑 Numéro de compte:" },
-        { "Name", " 🏷️ Nom du compte :" },
-        { "Branch", " 🏦 Agence         :" },
-        { "OpeningDate", " 📆 Date d'ouverture:" },
-        { "Currency", " 💱 Devise         :" },
-        { "Balance", " 💰 Solde          :" },
+        { "Id", " 🔑 Numéro de compte" },
+        { "Name", " 🏷️ Nom du compte" },
+        { "Branch", " 🏦 Agence" },
+        { "OpeningDate", " 📆 Date d'ouverture" },
+        { "Currency", " 💱 Devise" },
+        { "Balance", " 💰 Solde" },
 
         // Withdraw Menu
         { "WishWithdraw", "\n 👉 Veuillez saisir le numéro de compte dont vous souhaitez retirer de l'argent: " },
@@ -273,10 +273,10 @@
         { "RecieverId", "\n ➡️ Veuillez saisir le numéro de compte du destinataire: " },
 
         // LogHistory
-        {"LogId"," 🔑 ID du journal    :"},
-        {"LogTime"," ⌛ Heure du journal :"},
-        {"Type"," 🔠 Type              :"},
-        {"LogTransactionAmount"," 💰 Montant transaction:"},
+        {"LogId"," 🔑 ID du journal"},
+        {"LogTime"," ⌛ Heure du journal"},
+        {"Type"," 🔠 Type"},
+        {"LogTransactionAmount"," 💰 Montant transaction"},
 
         //Exit
         {"ExitOperation"," ➡️ Êtes-vous sûr de vouloir quitter (O-N): "},
@@ -312,12 +312,12 @@
         { "Exit", "Salir" },
 
         // List
-        { "Id", " 🔑 ID de cuenta    :" },
-        { "Name", " 🏷️ Nombre cuenta  :" },
-        { "Branch", " 🏦 Sucursal       :" },
-        { "OpeningDate", " 📆 Fecha apertura :" },
-        { "Currency", " 💱 Moneda         :" },
-        { "Balance", " 💰 Saldo          :" },
+        { "Id", " 🔑 ID de cuenta" },
+        { "Name", " 🏷️ Nombre cuenta" },
+        { "Branch", " 🏦 Sucursal" },
+        { "OpeningDate", " 📆 Fecha apertura" },
+        { "Currency", " 💱 Moneda" },
+        { "Balance", " 💰 Saldo" },
 
         // Withdraw Menu
         { "WishWithdraw", "\n 👉 Por favor ingrese el ID de la cuenta de la que desea retirar dinero: " },
@@ -344,10 +344,10 @@
         { "RecieverId", "\n ➡️ Por favor ingrese el número de cuenta asociado con la cuenta del destinatario: " },
 
         // LogHistory
-        {"LogId"," 🔑 ID de registro   :"},
-        {"LogTime"," ⌛ Hora registro    :"},
-        {"Type"," 🔠 Tipo              :"},
-        {"LogTransactionAmount"," 💰 Monto transacción:"},
+        {"LogId"," 🔑 ID de registro"},
+        {"LogTime"," ⌛ Hora registro"},
+        {"Type"," 🔠 Tipo"},
+        {"LogTransactionAmount"," 💰 Monto transacción"},
 
         //Exit
         {"ExitOperation"," ➡️ ¿Está seguro de que desea salir (S-N): "},
@@ -383,12 +383,12 @@
         { "Exit", "Esci" },
 
         // List
-        { "Id", " 🔑 ID conto         :" },
-        { "Name", " 🏷️ Nome conto      :" },
-        { "Branch", " 🏦 Filiale         :" },
-        { "OpeningDate", " 📆 Data apertura   :" },
-        { "Currency", " 💱 Valuta          :" },
-        { "Balance", " 💰 Saldo           :" },
+        { "Id", " 🔑 ID conto" },
+        { "Name", " 🏷️ Nome conto" },
+        { "Branch", " 🏦 Filiale" },
+        { "OpeningDate", " 📆 Data apertura" },
+        { "Currency", " 💱 Valuta" },
+        { "Balance", " 💰 Saldo" },
 
         // Withdraw Menu
         { "WishWithdraw", "\n 👉 Si prega di inserire l'ID del conto da cui si desidera prelevare denaro: " },
@@ -415,10 +415,10 @@
         { "RecieverId", "\n ➡️ Si prega di inserire il numero di conto associato al conto del destinatario: " },
 
         // LogHistory
-        {"LogId"," 🔑 ID registro      :"},
-        {"LogTime"," ⌛ Ora registro     :"},
-        {"Type"," 🔠 Tipo              :"},
-        {"LogTransactionAmount"," 💰 Importo transazione:"},
+        {"LogId"," 🔑 ID registro"},
+        {"LogTime"," ⌛ Ora registro"},
+        {"Type"," 🔠 Tipo"},
+        {"LogTransactionAmount"," 💰 Importo transazione"},
 
         //Exit
         {"ExitOperation"," ➡️ Sei sicuro di voler uscire (S-N): "},
@@ -454,12 +454,12 @@
         { "Exit", "Выход" },
 
         // List
-        { "Id", " 🔑 ID счета        :" },
-        { "Name", " 🏷️ Название счета :" },
-        { "Branch", " 🏦 Филиал          :" },
-        { "OpeningDate", " 📆 Дата открытия  :" },
-        { "Currency", " 💱 Валюта          :" },
-        { "Balance", " 💰 Баланс          :" },
+        { "Id", " 🔑 ID счета" },
+        { "Name", " 🏷️ Название счета" },
+        { "Branch", " 🏦 Филиал" },
+        { "OpeningDate", " 📆 Дата открытия" },
+        { "Currency", " 💱 Валюта" },
+        { "Balance", " 💰 Баланс" },
 
         // Withdraw Menu
         { "WishWithdraw", "\n 👉 Пожалуйста, введите ID счета, с которого вы хотите снять деньги: " },
@@ -486,10 +486,10 @@
         { "RecieverId", "\n ➡️ Пожалуйста, введите номер счета получателя: " },
 
         // LogHistory
-        {"LogId"," 🔑 ID записи       :"},
-        {"LogTime"," ⌛ Время записи    :"},
-        {"Type"," 🔠 Тип               :"},
-        {"LogTransactionAmount"," 💰 Сумма транзакции:"},
+        {"LogId"," 🔑 ID записи"},
+        {"LogTime"," ⌛ Время записи"},
+        {"Type"," 🔠 Тип"},
+        {"LogTransactionAmount"," 💰 Сумма транзакции"},
 
         //Exit
         {"ExitOperation"," ➡️ Вы уверены, что хотите выйти (Д-Н): "},
