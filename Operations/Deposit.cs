@@ -1,4 +1,4 @@
-﻿class Depoist
+﻿class Deposit
 {
     public static void DepositMoney()
     {

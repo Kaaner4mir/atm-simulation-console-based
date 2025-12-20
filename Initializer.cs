@@ -14,6 +14,8 @@ class Initializer
         try
         {
             ChooseLanguage();
+            UserControl.Control();
+            await Animations.SpinnerAnimation();
 
             while (true)
             {
@@ -25,7 +27,7 @@ class Initializer
                 switch (inputVal)
                 {
                     case 1: Withdraw.WithdrawMoney(); break;
-                    case 2: Depoist.DepositMoney(); break;
+                    case 2: Deposit.DepositMoney(); break;
                     case 3: BalanceInquiry.ListAccounts(); break;
                     case 4: MoneyTransfer.Transfer(); break;
                     case 5: LogHistory.ListLog(); break;
@@ -51,6 +53,11 @@ class Initializer
             Console.CursorVisible = false;
             Utils.WriteColored(" 1. Türkçe");
             Utils.WriteColored(" 2. English");
+            Utils.WriteColored(" 3. Deutsch");
+            Utils.WriteColored(" 4. Français");
+            Utils.WriteColored(" 5. Español");
+            Utils.WriteColored(" 6. Italiano");
+            Utils.WriteColored(" 7. Русский");
 
             char choice = Console.ReadKey(true).KeyChar;
 
@@ -62,6 +69,26 @@ class Initializer
 
                 case '2':
                     _lm.SetLanguage(LanguageManager.Language.EN);
+                    return;
+
+                case '3':
+                    _lm.SetLanguage(LanguageManager.Language.DE);
+                    return;
+
+                case '4':
+                    _lm.SetLanguage(LanguageManager.Language.FR);
+                    return;
+
+                case '5':
+                    _lm.SetLanguage(LanguageManager.Language.ES);
+                    return;
+
+                case '6':
+                    _lm.SetLanguage(LanguageManager.Language.IT);
+                    return;
+
+                case '7':
+                    _lm.SetLanguage(LanguageManager.Language.RU);
                     return;
 
                 default:

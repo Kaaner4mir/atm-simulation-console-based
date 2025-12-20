@@ -119,7 +119,14 @@ class MoneyTransfer
             return;
         }
 
+        if (senderId == recieverId)
+        {
+            Utils.WriteColored($"{_lm.T("InvalidOperation")}", ConsoleColor.DarkRed);
+            return;
+        }
+
         SenderAccount.Balance -= transferAmount;
+        recieverAccount.Balance += transferAmount;
 
         Console.Clear();
 
