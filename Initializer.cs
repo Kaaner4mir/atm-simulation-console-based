@@ -1,9 +1,16 @@
 ﻿using System.Text;
 
+/// <summary>
+/// Initializes and manages the main application flow.
+/// </summary>
 class Initializer
 {
     static LanguageManager _lm = new LanguageManager();
 
+    /// <summary>
+    /// The main entry point of the application.
+    /// </summary>
+    /// <returns>A task representing the asynchronous operation.</returns>
     public static async Task Main()
     {
         Console.InputEncoding = Encoding.UTF8;
@@ -44,6 +51,9 @@ class Initializer
         }
     }
 
+    /// <summary>
+    /// Displays the language selection menu and sets the application language.
+    /// </summary>
     public static void ChooseLanguage()
     {
         while (true)
